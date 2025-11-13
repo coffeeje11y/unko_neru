@@ -71,7 +71,7 @@ export default function App() {
 
   const reset = () => {
     localStorage.removeItem(STORAGE_KEY)
-    window.location.reload()
+    window.location.replace(window.location.pathname + window.location.search)
   }
 
   // 🎉 終了画面
